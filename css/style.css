@@ -1,85 +1,129 @@
-body{
-   /* Set line spacing */
+body {
+    /* Set line spacing */
+    line-height: 1.5;
 }
 
 
-header, nav{
+header,
+nav {
     /* Set padding and margin */
+    padding: 10px 15px 20px 25px;
+    margin: 20px 0 15px 10px;
 
 }
-nav ul li{
+
+nav ul li {
     /* Set display, margin, padding, font-size, background-color */
-
+    background-color: bisque;
+    font-size: 20px;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 2rem;
 }
 
-nav a{
+nav a {
     /* Set text decoration*/
+    text-decoration: none;
+    color: black;
 }
 
-a:visited{
+a:visited {
     /* Set color */
-
+    color: black;
 }
 
-nav a.current{
+nav a.current {
     /* Set text decoration, transformation, and underline properties */
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-decoration-style: wavy;
+    text-underline-offset: 10px;
 }
 
 
-h1{
-   /*Set font and font size*/
-
+h1 {
+    /*Set font and font size*/
+    font-family: 'Merriweather', 'Anton', 'Times New Roman', sans-serif;
+    font-size: 34pt;
 }
 
-h2{
+h2 {
     /*Set font, font size, and alignment*/
+    font-family: 'Anton', 'Times New Roman', sans-serif;
+    text-align: center;
+    font-size: 28pt;
 }
 
-h3{
+h3 {
     /*Set font size*/
-
+    font-size: 24pt;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     /*Set margin */
-
+    margin-top: 10px;
 }
-.grid{
+
+.grid {
     /*Set width, margin, border properties, background color, and grid properties */
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 10px;
+    justify-content: space-between;
+    background-color: #6f7c9f;
 }
 
-.grid div{
+.grid div {
     /* Set border properties, padding, and background color */
-
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
 }
 
-.grid img{
+.grid img {
     /* Set width, margin, and display */
+    width: 90%;
+    margin: auto;
+    display: block;
 }
 
 
-.grid div:nth-child(3n+1)  {
+.grid div:nth-child(3n+1) {
     /* Set box shadow */
-    }
-
-.grid div:nth-child(3n)  {
-    /* Set box shadow */ 
+    box-shadow: 10px 0 10px 0 #b0a5a5;
 }
 
-.grid div:nth-child(3n+2)  {
-     /* Set box shadow */
+.grid div:nth-child(3n) {
+    /* Set box shadow */
+    box-shadow: -10px 0 10px 0 #b0a5a5;
 }
-    
 
-p + p {
-     /* Set indentation */
-  }
-  
-p{
-     /* Set margin */
+.grid div:nth-child(3n+2) {
+    /* Set box shadow */
+    box-shadow: -10px 0 10px 0 #b0a5a5, 15px 0 10px 0 #b0a5a5;
 }
 
 
-.grid ul li{
+p+p {
+    /* Set indentation */
+    text-indent: 1rem;
+}
+
+p {
+    /* Set margin */
+    margin-top: 1rem;
+}
+
+
+.grid ul li {
     /* Set margin, line-spacing, list styling  */
+    line-height: 1;
+    margin: 0 0 10px 40px;
+    list-style: url('../images/sketchbook.png');
 }
